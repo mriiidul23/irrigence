@@ -4,14 +4,14 @@
 
 ---
 
-## 🌊 Overview
+##  Overview
 **Irrigence** is a digital spatial decision-support system designed to monitor irrigation canal embankment integrity and hydraulic conveyance efficiency across regional gravity irrigation schemes in North East India (simulated for the Kopili-Jamuna canal corridor in Assam).
 
 Because physical IoT sensors are still being procured, Irrigence features a comprehensive physics-grounded synthetic telemetry generator and an AI/ML predictive surrogate engine that detects seepage anomalies and calculates reach-by-reach failure risk in real time.
 
 ---
 
-## 🛠️ Architecture & Tech Stack
+##  Architecture & Tech Stack
 
 ```
 irrigence/
@@ -30,7 +30,7 @@ irrigence/
 
 ---
 
-## 🔬 Mathematical Formulations
+##  Mathematical Formulations
 
 ### 1. Model Accuracy & Validation (RMSE)
 The ML surrogate models learn the physical hydrodynamic and geotechnical equilibrium during normal operations:
@@ -46,14 +46,14 @@ $$\text{Risk Score} = \text{Likelihood of Failure } (P_f) \times \frac{\text{Con
   $$C_f = 0.40 \cdot \text{CropValue} + 0.40 \cdot \text{PopulationProximity} + 0.20 \cdot \text{CriticalInfrastructure}$$
 
 ### 3. Risk Tiers
-- 🟢 **Low Risk (0–25):** Normal operational condition.
-- 🟡 **Moderate Risk (25–50):** Routine advisory / scheduled surveillance.
-- 🟠 **High Risk (50–75):** Structural stress detected — maintenance intervention recommended.
-- 🔴 **Critical Threat (75–100):** Imminent embankment breach or high-volume piping void.
+-  **Low Risk (0–25):** Normal operational condition.
+-  **Moderate Risk (25–50):** Routine advisory / scheduled surveillance.
+-  **High Risk (50–75):** Structural stress detected — maintenance intervention recommended.
+-  **Critical Threat (75–100):** Imminent embankment breach or high-volume piping void.
 
 ---
 
-## 🚀 Running the Platform
+## Running the Platform
 
 1. **Activate Environment & Install Dependencies:**
    ```powershell
