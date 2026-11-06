@@ -70,4 +70,7 @@ $$\text{Risk Score} = \text{Likelihood of Failure } (P_f) \times \frac{\text{Con
 3. **Run Autonomous Verification & Capture Screenshots:**
    ```powershell
    py interact_and_screenshot.py
+
+   <img width="1907" height="912" alt="image" src="https://github.com/user-attachments/assets/27a1630f-1736-4e68-ba34-17bc62e4f512" />
+
    ```
