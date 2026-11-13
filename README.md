@@ -47,27 +47,25 @@ Physical IoT sensors are still being procured. To allow development and validati
 
 ## Screenshots
 
-Place image files in `docs/screenshots/` and update the paths below.
-
 ### 1. Dashboard Overview
 
 Main landing view showing the canal corridor, summary indicators and navigation.
 
-![Dashboard Overview](docs/screenshots/dashboard_overview.png)
+<img width="1907" height="902" alt="Dashboard Overview" src="https://github.com/user-attachments/assets/5bc1752c-311d-4227-8abe-49476e1bff2a" />
 
 ### 2. GIS Risk Map
 
 Canal reaches on the map, colour-coded by risk tier.
 
-![GIS Risk Map](docs/screenshots/gis_risk_map_1.png)
-![GIS Risk Map](docs/screenshots/gis_risk_map_2.png)
+<img width="1917" height="886" alt="GIS Risk Map 1" src="https://github.com/user-attachments/assets/03c18f3b-34de-4aad-82bb-d2b6243f38d3" />
+
+<img width="1912" height="887" alt="GIS Risk Map 2" src="https://github.com/user-attachments/assets/0d255085-cc1c-466b-88a4-271a31a4b7cd" />
 
 ## System Architecture
 
-```
-Synthetic Data Generator  ->  Predictive Models  ->  Risk Engine  ->  GIS Dashboard
-  (data_generator.py)       (predictive_model.py)                        (app.py)
-```
+<p align="center">
+  <img src="docs/architecture.svg" alt="Irrigence system architecture: Data Layer, Model Layer, Risk Layer and GIS Dashboard" width="100%" />
+</p>
 
 - **Data layer:** Generates canal geometry (GeoJSON) and sensor time series within the bounds set in `config.py`.
 - **Model layer:** Random Forest and Gradient Boosting regressors learn normal operation. Residuals between prediction and observation indicate anomalies.
@@ -164,6 +162,7 @@ irrigence/
 ├── interact_and_screenshot.py  # Playwright browser verification script
 ├── requirements.txt            # Python dependencies
 ├── docs/
+│   ├── architecture.svg        # System architecture diagram
 │   └── screenshots/            # README images
 └── README.md                   # Documentation
 ```
